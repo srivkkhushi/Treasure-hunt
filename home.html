@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treasure Hunt Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<img src="./image/treasure-hunting-icon-with-pirate-map-and-compass-vector-41409132-removebg-preview.png" alt="Treasure Hunt Logo">
+		</nav>
+		<div class="description">
+			<h2>Hunt for the Hidden: </h2>
+			<h5>Can You Uncover the Mystery?</h5>
+			<div>
+				<a href="./user.html" class="btn">User Login</a>
+				<a href="./admin.html" class="btn">Admin Login</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		function myFunction(event) {
+			event.preventDefault();
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if(username == "student" && password == "1234") {
+				window.location.href = "login.html";
+				return true;
+			} else {
+				alert("Invalid Username and Password");
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

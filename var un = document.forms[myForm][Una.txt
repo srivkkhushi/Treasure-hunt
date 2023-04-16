@@ -1,0 +1,74 @@
+	var un = document.forms["myForm"]["Uname"].value;
+			var pw = document.forms["myForm"]["Pass"].value;
+			if(un=="student" && pw=="1234")
+
+	else
+			{
+				alert("Invalid Username and Password");
+			}
+
+
+
+
+
+
+function myFunction()
+		{
+			var un = document.forms["myForm"]["Uname"].value;
+			var pw = document.forms["myForm"]["Pass"].value;
+			if(un=="student" && pw=="1234")
+			{
+				window.location.href = "login.html";
+			}
+			else
+			{
+				alert("Invalid Username and Password");
+				return false;
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login Page</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+	<div class="login">
+		<h1>Admin Login</h1>
+		<form onsubmit="return myFunction()">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<input type="submit" value="Login">
+		</form>
+	</div>
+	<script>
+		function myFunction() 
+	{
+    	if(username == "student" && password == "1234") 
+		{
+        window.location.href = "login.html";
+		return true;
+    	} else {
+        alert("Invalid Username and Password");
+		return false;
+    }
+}
+
+	</script>
+</body>
+</html>

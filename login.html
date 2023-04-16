@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Treasure Hunt Puzzle</title>
+  </head>
+  <body>
+    <h1>Treasure Hunt Puzzle</h1>
+    <div id="game">
+      <div id="step-0" class="step">
+        <p>Welcome to the treasure hunt puzzle!</p>
+        <button id="start-button">Start</button>
+      </div>
+      <div id="step-1" class="step">
+        <p>Clue 1: Mystic Falls was full of?</p>
+        <input id="clue-1" type="text" placeholder="Enter the answer...">
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
+      <div id="step-2" class="step">
+        <p>Clue 2: Vampires couldn't compel people who wore a ring that had? </p>
+        <input id="clue-2" type="text" placeholder="Enter the answer...">
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
+      <div id="step-3" class="step">
+        <p>Clue 3: Klaus could compel everyone even after people wore ring of vervain because he was?</p>
+        <input id="clue-3" type="text" placeholder="Enter the answer...">
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
+      <div id="step-4" class="step">
+        <p>Clue 4: doppelganger's best friend who performed spells?</p>
+        <input id="clue-4" type="text" placeholder="Enter the answer...">
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
+      <div id="step-5" class="step">
+        <p>Clue 5: which Salvatore brother died at the end?</p>
+        <input id="clue-5" type="text" placeholder="Enter the answer...">
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
+      <div id="step-6" class="step">
+        <p>Congratulations! You have found the treasure.</p>
+        <p>Your score is: <span id="score"></span></p>
+        <button id="restart-button">Restart</button>
+      </div>
+    <!-- </div>
+    <div id="login">
+      <h2>Login</h2>
+      <form>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div id="signup">
+      <h2>Sign up</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Sign up</button>
+      </form>
+    </div> -->
+    <div id="admin">
+      <h2>Admin Dashboard</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Time</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody id="user-data">
+          <tr>
+            <td>Loading...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

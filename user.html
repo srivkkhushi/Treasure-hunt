@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="login">
+		<h1>User Login</h1>
+		<form onsubmit="return myFunction(event)">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<input type="submit" value="Login">
+		</form>
+	</div>
+	<script>
+		function myFunction(event) {
+			event.preventDefault();
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if(username == "student" && password == "1234") {
+				window.location.href = "login.html";
+				return true;
+			} else {
+				alert("Invalid Username and Password");
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
